@@ -3,6 +3,7 @@
 
 """Base LLM class definition."""
 
+import logging
 import traceback
 from abc import ABC, abstractmethod
 from typing import Generic, TypeVar
@@ -16,6 +17,8 @@ from graphrag.llm.types import (
     LLMInput,
     LLMOutput,
 )
+
+log = logging.getLogger(__name__)
 
 TIn = TypeVar("TIn")
 TOut = TypeVar("TOut")

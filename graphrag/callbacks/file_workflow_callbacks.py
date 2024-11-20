@@ -12,7 +12,6 @@ from datashaper import NoopWorkflowCallbacks
 
 log = logging.getLogger(__name__)
 
-
 class FileWorkflowCallbacks(NoopWorkflowCallbacks):
     """A logger that writes to a local file."""
 
