@@ -26,11 +26,11 @@
         {
             "label": "Launch Gradio App",
             "type": "shell",
-            "command": "poetry",
+            "command": "graphrag",
             "args": [
-                "run",
-                "poe",                
-                "index"
+                "index",
+                "--root",
+                "./ragtest"
             ],
             "problemMatcher": [],
             "group": "build",

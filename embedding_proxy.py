@@ -49,7 +49,7 @@ async def create_embedding(request: EmbeddingRequest):
             object="list",
             data=embeddings,
             model=request.model,
-            usage = usage_data            
+            usage = usage_data
         )
 
 if __name__ == "__main__":
